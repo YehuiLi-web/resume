@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set title = "张三的简历" %}
+{% set name = "张三" %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {{ content|markdown }} <!-- 渲染Markdown内容 -->
+            </div>
+        </div>
+    </div>
+{% endblock %}
